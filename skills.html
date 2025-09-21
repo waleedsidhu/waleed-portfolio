@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Skills — Muhammad Waleed Akhtar</title>
+  <meta name="description" content="Skills, tools and languages for HR leadership, KPI frameworks, payroll & HRIS, ATS, CRM training, and more.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://unpkg.com/swup@4"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@swup/js-plugin@3.2.0/dist/js-plugin.umd.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body class="bg-slate-950 text-white">
+  <div id="transition-overlay" aria-hidden="true">
+    <span class="panel panel-1"></span><span class="panel panel-2"></span>
+  </div>
+
+  <header class="sticky top-0 z-40 backdrop-blur bg-slate-950/70 border-b border-white/10" data-swup-persist="nav">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="font-bold tracking-wide hover:opacity-80">MUHAMMAD WALEED AKHTAR</a>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="achievements.html" class="nav-link">Achievements</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="swup" class="transition-page">
+    <section class="max-w-6xl mx-auto px-4 pt-14">
+      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Skills & Tools</h1>
+      <p class="mt-3 text-white/75">Strategic HR leadership with measurable impact.</p>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card p-5 reveal">HR Operations & Policy</div>
+      <div class="card p-5 reveal">Payroll, HRIS & Compliance</div>
+      <div class="card p-5 reveal">KPI Frameworks & Performance Systems</div>
+      <div class="card p-5 reveal">Employee Engagement & Retention</div>
+      <div class="card p-5 reveal">ATS Compliance & Career Branding</div>
+      <div class="card p-5 reveal">CRM (GoHighLevel) Training</div>
+      <div class="card p-5 reveal">Workflow Automation & SOPs</div>
+      <div class="card p-5 reveal">Team Leadership & Mentorship</div>
+      <div class="card p-5 reveal">Recruitment & Onboarding</div>
+    </section>
+
+    <!-- Impact stats -->
+    <section class="max-w-6xl mx-auto px-4 pb-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="card p-6 reveal"><div class="stat" data-counter="15">0</div><p class="text-white/70">SOPs standardized</p></div>
+      <div class="card p-6 reveal"><div class="stat"><span data-counter="25">0</span><span class="text-indigo-300">%</span></div><p class="text-white/70">Admin time reduced</p></div>
+      <div class="card p-6 reveal"><div class="stat"><span data-counter="25">0</span><span class="text-indigo-300">%</span></div><p class="text-white/70">Onboarding time reduced</p></div>
+      <div class="card p-6 reveal"><div class="stat"><span data-counter="20">0</span><span class="text-indigo-300">%</span></div><p class="text-white/70">Productivity improved</p></div>
+    </section>
+
+    <!-- Tools -->
+    <section class="max-w-6xl mx-auto px-4 pb-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Tools</h2>
+      <div class="flex flex-wrap gap-2 reveal">
+        <span class="chip">HRIS</span>
+        <span class="chip">Payroll Systems</span>
+        <span class="chip">GoHighLevel CRM</span>
+        <span class="chip">ATS / LinkedIn Recruiter</span>
+        <span class="chip">Google Workspace</span>
+        <span class="chip">Docs · Sheets · Slides</span>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Languages</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="card p-5 reveal"><strong>Punjabi</strong> — Native/Bilingual</div>
+        <div class="card p-5 reveal"><strong>Urdu</strong> — Full Professional</div>
+        <div class="card p-5 reveal"><strong>English</strong> — Full Professional</div>
+        <div class="card p-5 reveal"><strong>German</strong> — Elementary</div>
+        <div class="card p-5 reveal"><strong>Arabic</strong> — Limited Working</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10" data-swup-persist="footer">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-white/70 flex flex-col md:flex-row items-center justify-between gap-3">
+      <span>© <span id="y"></span> Muhammad Waleed Akhtar — HR & Workforce Management</span>
+      <div class="flex items-center gap-4">
+        <a class="hover:text-white/90" href="mailto:waleedsidhu91@gmail.com">Email</a>
+        <a class="hover:text-white/90" href="https://www.linkedin.com/in/muhammadwaleedakhtar" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="hover:text-white/90" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>

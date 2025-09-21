@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Muhammad Waleed Akhtar</title>
+  <meta name="description" content="About Muhammad Waleed Akhtar — strategic HR leader focused on KPI frameworks, payroll & HRIS excellence, and workforce empowerment.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://unpkg.com/swup@4"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@swup/js-plugin@3.2.0/dist/js-plugin.umd.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body class="bg-slate-950 text-white">
+  <div id="transition-overlay" aria-hidden="true">
+    <span class="panel panel-1"></span><span class="panel panel-2"></span>
+  </div>
+
+  <header class="sticky top-0 z-40 backdrop-blur bg-slate-950/70 border-b border-white/10" data-swup-persist="nav">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="font-bold tracking-wide hover:opacity-80">MUHAMMAD WALEED AKHTAR</a>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="achievements.html" class="nav-link">Achievements</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="swup" class="transition-page">
+    <section class="max-w-6xl mx-auto px-4 pt-14 grid lg:grid-cols-[280px_1fr] gap-8 items-start">
+      <img src="images/waleed.jpg" alt="Muhammad Waleed Akhtar" class="rounded-2xl border border-white/10 shadow-2xl w-64 h-64 object-cover hero-img">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight hero-title">About Me</h1>
+        <p class="mt-4 text-white/80 hero-sub">
+          I’m <strong>Muhammad Waleed Akhtar</strong>, an HR & Payroll Manager at
+          <a class="underline decoration-indigo-400/50 hover:decoration-indigo-400" target="_blank" rel="noopener" href="https://skilledforce.co/">SkilledForce</a>.
+          I build <strong>KPI-based performance systems</strong>, run <strong>accurate payroll & HRIS</strong>, and design
+          <strong>employee engagement</strong> programs that help teams perform with clarity and consistency.
+        </p>
+        <p class="mt-3 text-white/80">
+          Highlights: standardized <strong>15+ SOPs</strong>, cut administrative time by <strong>25%</strong>, reduced onboarding time by <strong>25%</strong>, and improved productivity by <strong>20%</strong>.
+          I’ve led onboarding/training for <strong>40+ professionals</strong> across ATS, LinkedIn, CRM, and U.S. hiring practices.
+        </p>
+
+        <div class="mt-6 grid sm:grid-cols-3 gap-4">
+          <div class="card p-4 reveal"><div class="text-sm text-white/60">Based</div><div class="font-semibold">Islamabad, Pakistan</div></div>
+          <div class="card p-4 reveal"><div class="text-sm text-white/60">Email</div><a href="mailto:waleedsidhu91@gmail.com" class="font-semibold underline">waleedsidhu91@gmail.com</a></div>
+          <div class="card p-4 reveal"><div class="text-sm text-white/60">Resume</div><a href="assets/resume.pdf" class="font-semibold underline" download>Download PDF</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Memberships -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Memberships & Organizations</h2>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <a target="_blank" rel="noopener" href="https://youthgroup.ctbto.org/" class="card p-5 flex items-start gap-4 reveal">
+          <div class="chip">CTBTO Youth Group</div>
+          <div>
+            <div class="font-semibold">Member · Aug 2024 – Present</div>
+            <p class="text-white/75 text-sm mt-1">Workshops, policy discussions, and CTBT awareness (associated with Global Defense Insight).</p>
+          </div>
+        </a>
+        <a target="_blank" rel="noopener" href="https://www.wins.org/" class="card p-5 flex items-start gap-4 reveal">
+          <div class="chip">WINS</div>
+          <div>
+            <div class="font-semibold">World Institute for Nuclear Security · Member</div>
+            <p class="text-white/75 text-sm mt-1">Engage with best practices, webinars, and networks on global nuclear security.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Causes -->
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Causes I Care About</h2>
+      <div class="flex flex-wrap gap-2 reveal">
+        <span class="chip">Politics</span>
+        <span class="chip">Human Rights</span>
+        <span class="chip">Social Services</span>
+        <span class="chip">Civil Rights & Social Action</span>
+        <span class="chip">Arts & Culture</span>
+        <span class="chip">Environment</span>
+        <span class="chip">Education</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10" data-swup-persist="footer">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-white/70 flex flex-col md:flex-row items-center justify-between gap-3">
+      <span>© <span id="y"></span> Muhammad Waleed Akhtar — HR & Workforce Management</span>
+      <div class="flex items-center gap-4">
+        <a class="hover:text-white/90" href="mailto:waleedsidhu91@gmail.com">Email</a>
+        <a class="hover:text-white/90" href="https://www.linkedin.com/in/muhammadwaleedakhtar" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="hover:text-white/90" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
