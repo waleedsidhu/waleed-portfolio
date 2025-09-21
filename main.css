@@ -1,0 +1,139 @@
+/* ====== Modern Dark Theme + Motion Polish (site-wide) ====== */
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+  --bg: #0b1220;             /* deep space */
+  --bg-soft: #0f172a;        /* slate-950 */
+  --card: rgba(255,255,255,0.04);
+  --card-2: rgba(255,255,255,0.03);
+  --border: rgba(255,255,255,0.10);
+  --border-strong: rgba(255,255,255,0.18);
+  --text: #e5e7eb;
+  --muted: rgba(229,231,235,0.75);
+  --accent: #6366f1;         /* indigo-500 */
+  --accent-2: #8b5cf6;       /* violet-500 */
+  --accent-3: #22d3ee;       /* cyan-400 */
+  --shadow: 0 10px 25px rgba(2,6,23,.35);
+}
+
+html{ scroll-behavior: smooth; }
+body{
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(99,102,241,.15), transparent 60%),
+              radial-gradient(800px 500px at 120% 10%, rgba(34,211,238,.10), transparent 60%),
+              var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* Headings / text rhythm */
+h1,h2,h3{ letter-spacing: -.01em; }
+h1{ text-wrap: balance; }
+p{ line-height: 1.7; }
+
+/* Links */
+a{ transition: color .2s ease, opacity .25s ease; }
+a:hover{ color: #fff; }
+
+/* Header nav */
+.nav-link{ color: rgba(255,255,255,.78); }
+.nav-link:hover{ color: #fff; }
+
+/* Cards (glass + lift) */
+.card{
+  background: linear-gradient(180deg, var(--card), var(--card-2));
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  transition: transform .35s cubic-bezier(.2,.8,.2,1), border-color .25s ease, box-shadow .35s ease, background .35s ease, filter .35s ease;
+  backdrop-filter: blur(6px);
+}
+.card:hover{
+  transform: translateY(-4px);
+  border-color: var(--border-strong);
+  box-shadow: 0 16px 35px rgba(2,6,23,.45);
+}
+
+/* Chips / tags */
+.chip{
+  display: inline-block;
+  padding: .35rem .7rem;
+  font-size: .85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: radial-gradient(60% 120% at 30% 30%, rgba(99,102,241,.18), rgba(255,255,255,.04));
+}
+
+/* Stats */
+.stat{
+  font-weight: 800;
+  font-size: clamp(2rem, 6vw, 3rem);
+  line-height: 1.05;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Reveal baseline (if JS disabled, content still visible) */
+.reveal{ will-change: transform, opacity; }
+
+/* Transition overlay (Swup) */
+#transition-overlay{
+  position: fixed; inset: 0;
+  display: flex; flex-direction: column;
+  pointer-events: none; z-index: 60;
+  transform: translateY(-100%); /* hidden by default; GSAP controls */
+}
+#transition-overlay .panel{
+  flex: 1;
+  background: linear-gradient(180deg, #0e1430, #0b1028);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+#transition-overlay .panel-2{
+  background: linear-gradient(180deg, #10173a, #0b1124);
+}
+
+/* Images — elegant motion on hover */
+.card img,
+.gallery-item img,
+.hero-img{
+  transition: transform .55s cubic-bezier(.2,.8,.2,1), filter .35s ease, box-shadow .35s ease;
+  will-change: transform;
+}
+.card:hover img{ transform: translateY(-2px) scale(1.015); }
+.gallery-item img:hover{ transform: translateY(-2px) scale(1.02); }
+.hero-img{ box-shadow: 0 20px 60px rgba(0,0,0,.35); }
+
+/* Lightbox helper bits */
+#lightbox button#lightbox-close{
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+/* Footer */
+footer{ background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.03)); }
+
+/* LinkedIn badge wrapper (contact page only) */
+.li-badge-wrapper{
+  display:inline-block;
+  padding: .5rem .75rem;
+  border-radius: .75rem;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));
+  box-shadow: var(--shadow);
+  transition: transform .35s cubic-bezier(.2,.8,.2,1), border-color .25s ease, box-shadow .35s ease;
+}
+.li-badge-wrapper:hover{
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+}
+
+/* Utilities */
+.sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+/* Fine-tune small screens */
+@media (max-width: 420px){
+  .chip{ font-size:.8rem; padding:.3rem .6rem; }
+}
