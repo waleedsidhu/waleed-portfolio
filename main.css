@@ -137,3 +137,21 @@ footer{ background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255
 @media (max-width: 420px){
   .chip{ font-size:.8rem; padding:.3rem .6rem; }
 }
+/* ====== Professional Header Styling ====== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+header a {
+  transition: all 0.3s ease;
+}
+
+header nav a {
+  backdrop-filter: blur(6px);
+}
+
+header nav a:hover {
+  transform: translateY(-1px);
+}

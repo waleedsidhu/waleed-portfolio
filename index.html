@@ -35,61 +35,85 @@
     <span class="panel panel-1"></span><span class="panel panel-2"></span>
   </div>
 
-  <!-- Header (persist) -->
-  <header class="sticky top-0 z-40 backdrop-blur bg-slate-950/70 border-b border-white/10" data-swup-persist="nav">
-    <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="index.html" class="font-bold tracking-wide hover:opacity-80">MUHAMMAD WALEED AKHTAR</a>
-      <div class="hidden md:flex items-center gap-6 text-sm">
-        <a href="about.html" class="nav-link">About</a>
-        <a href="experience.html" class="nav-link">Experience</a>
-        <a href="skills.html" class="nav-link">Skills</a>
-        <a href="achievements.html" class="nav-link">Achievements</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </div>
+  <!-- ========== HEADER ========== -->
+<header class="sticky top-0 z-50 backdrop-blur-md bg-gradient-to-r from-indigo-700 via-purple-700 to-indigo-800 shadow-md border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    
+    <!-- Brand / Name -->
+    <a href="index.html" class="text-2xl md:text-3xl font-extrabold tracking-wide text-white hover:text-indigo-200 transition">
+      Muhammad Waleed Akhtar
+    </a>
+
+    <!-- Nav Links -->
+    <nav class="flex gap-3 items-center">
+      <a href="index.html"
+         class="px-4 py-2 rounded-full text-sm font-medium text-white/90 hover:text-white bg-white/10 hover:bg-white/20 transition">
+        Home
+      </a>
+      <a href="about.html"
+         class="px-4 py-2 rounded-full text-sm font-medium text-white/90 hover:text-white bg-white/10 hover:bg-white/20 transition">
+        About
+      </a>
+      <a href="publications.html"
+         class="px-4 py-2 rounded-full text-sm font-medium text-white/90 hover:text-white bg-white/10 hover:bg-white/20 transition">
+        Publications
+      </a>
+      
+      <!-- Professional CTA -->
+      <a href="contact.html"
+         class="px-5 py-2 rounded-full text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-500 shadow-md hover:shadow-lg transition">
+        Get in Touch
+      </a>
     </nav>
-  </header>
+  </div>
+</header>
 
   <!-- Swup container -->
   <main id="swup" class="transition-page" role="main">
 
-    <!-- ========== HERO ========== -->
-    <section class="max-w-6xl mx-auto px-4 pt-16 lg:pt-24 grid lg:grid-cols-[340px_1fr] gap-10 items-center">
-      <div class="relative">
-        <img src="images/waleed.jpg" alt="Portrait of Muhammad Waleed Akhtar"
-             class="w-64 h-64 lg:w-80 lg:h-80 rounded-3xl object-cover border-4 border-indigo-500/60 shadow-2xl hero-img" />
-        <div class="absolute -z-10 inset-0 rounded-3xl bg-indigo-500/20 blur-2xl"></div>
+   <!-- ========== HERO ========== -->
+<section class="max-w-6xl mx-auto px-4 pt-16 lg:pt-24 grid lg:grid-cols-[340px_1fr] gap-10 items-center">
+  <div class="relative">
+    <img src="images/waleed.jpg" alt="Portrait of Muhammad Waleed Akhtar"
+         class="w-64 h-64 lg:w-80 lg:h-80 rounded-3xl object-cover border-4 border-indigo-500/60 shadow-2xl hero-img" />
+    <div class="absolute -z-10 inset-0 rounded-3xl bg-indigo-500/20 blur-2xl"></div>
+  </div>
+
+  <div>
+    <!-- ✅ Added only this line -->
+    <h2 class="hero-name text-xl md:text-2xl font-semibold text-indigo-300 mb-2">
+      Muhammad Waleed Akhtar
+    </h2>
+
+    <h1 class="text-4xl md:text-6xl font-extrabold leading-[1.05] hero-title">
+      Transforming HR Operations through <span class="text-indigo-400">Strategic Leadership</span>, KPI Frameworks, and Workforce Innovation.
+    </h1>
+    <p class="mt-4 text-lg text-white/80 hero-sub">
+      <strong>HR & Payroll Manager</strong> | <strong>Career Branding Specialist</strong> | <strong>CRM & Workforce Trainer</strong>
+    </p>
+
+    <div class="mt-7 flex flex-wrap gap-3 hero-ctas">
+      <a href="#about-teaser" class="px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition font-medium">Explore</a>
+      <a href="contact.html" class="px-5 py-3 rounded-xl border border-white/20 hover:border-white/40 transition font-medium">Get in Touch</a>
+    </div>
+
+    <div class="mt-6 grid sm:grid-cols-3 gap-3">
+      <div class="card p-3">
+        <div class="text-xs text-white/60">Location</div>
+        <div class="font-semibold">Islamabad, Pakistan</div>
       </div>
-
-      <div>
-        <h1 class="text-4xl md:text-6xl font-extrabold leading-[1.05] hero-title">
-          Transforming HR Operations through <span class="text-indigo-400">Strategic Leadership</span>, KPI Frameworks, and Workforce Innovation.
-        </h1>
-        <p class="mt-4 text-lg text-white/80 hero-sub">
-          <strong>HR & Payroll Manager</strong> | <strong>Career Branding Specialist</strong> | <strong>CRM & Workforce Trainer</strong>
-        </p>
-
-        <div class="mt-7 flex flex-wrap gap-3 hero-ctas">
-          <a href="#about-teaser" class="px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition font-medium">Explore</a>
-          <a href="contact.html" class="px-5 py-3 rounded-xl border border-white/20 hover:border-white/40 transition font-medium">Get in Touch</a>
-        </div>
-
-        <div class="mt-6 grid sm:grid-cols-3 gap-3">
-          <div class="card p-3">
-            <div class="text-xs text-white/60">Location</div>
-            <div class="font-semibold">Islamabad, Pakistan</div>
-          </div>
-          <div class="card p-3">
-            <div class="text-xs text-white/60">Email</div>
-            <a href="mailto:waleedsidhu91@gmail.com" class="font-semibold underline">waleedsidhu91@gmail.com</a>
-          </div>
-          <div class="card p-3">
-            <div class="text-xs text-white/60">Resume</div>
-            <a href="assets/resume.pdf" download class="font-semibold underline">Download PDF</a>
-          </div>
-        </div>
+      <div class="card p-3">
+        <div class="text-xs text-white/60">Email</div>
+        <a href="mailto:waleedsidhu91@gmail.com" class="font-semibold underline">waleedsidhu91@gmail.com</a>
       </div>
-    </section>
-
+      <div class="card p-3">
+        <div class="text-xs text-white/60">Resume</div>
+        <a href="assets/resume.pdf" download class="font-semibold underline">Download PDF</a>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- ========== END HERO ========== -->
     <!-- ========== ABOUT TEASER (story) ========== -->
     <section id="about-teaser" class="max-w-6xl mx-auto px-4 pt-10">
       <div class="card p-6 reveal">
@@ -180,32 +204,58 @@
     </section>
 
     <!-- ========== SKILLS SNAPSHOT ========== -->
-    <section class="max-w-6xl mx-auto px-4 pb-10">
-      <h2 class="text-2xl md:text-3xl font-bold mb-4">Skills Snapshot</h2>
-      <div class="card p-6 reveal">
-        <div class="flex flex-wrap gap-2">
-          <span class="chip">Human Resources</span><span class="chip">Payroll</span><span class="chip">HRIS</span>
-          <span class="chip">KPI Tracking</span><span class="chip">Employee Engagement</span><span class="chip">Training & Development</span>
-          <span class="chip">ATS Compliance</span><span class="chip">CRM Workflows</span><span class="chip">Career Branding</span>
-          <span class="chip">Resume Optimization</span><span class="chip">LinkedIn Strategy</span>
-          <span class="chip">Workflow Automation</span><span class="chip">Recruitment</span><span class="chip">Onboarding</span>
-          <span class="chip">Talent Development</span><span class="chip">Research & Analysis</span>
-        </div>
-        <a href="skills.html" class="mt-4 inline-block text-indigo-300 hover:text-indigo-200 font-medium">View skills & education →</a>
-      </div>
-    </section>
+<section class="max-w-6xl mx-auto px-4 pb-10">
+  <h2 class="text-2xl md:text-3xl font-bold mb-4">Skills Snapshot</h2>
+  <div class="card p-6 reveal">
+    <div class="flex flex-wrap gap-2">
+      <span class="chip">Human Resources</span><span class="chip">Payroll</span><span class="chip">HRIS</span>
+      <span class="chip">KPI Tracking</span><span class="chip">Employee Engagement</span><span class="chip">Training & Development</span>
+      <span class="chip">ATS Compliance</span><span class="chip">CRM Workflows</span><span class="chip">Career Branding</span>
+      <span class="chip">Resume Optimization</span><span class="chip">LinkedIn Strategy</span>
+      <span class="chip">Workflow Automation</span><span class="chip">Recruitment</span>
+      <span class="chip">Talent Development</span><span class="chip">Research & Analysis</span>
+    </div>
+    <a href="skills.html" class="mt-4 inline-block text-indigo-300 hover:text-indigo-200 font-medium">View skills & education →</a>
+  </div>
+</section>
 
-    <!-- ========== PUBLICATION ========== -->
-    <section class="max-w-6xl mx-auto px-4 pb-16 grid md:grid-cols-[320px_1fr] gap-6 items-center">
-      <img src="images/article.jpeg" class="rounded-2xl border border-white/10 shadow-2xl reveal" alt="Cyberterrorism article cover" loading="lazy" decoding="async">
-      <div class="reveal">
-        <h2 class="text-2xl md:text-3xl font-bold">Publication</h2>
-        <p class="mt-2 text-white/80">My op-ed on cyberterrorism’s impact on global security, published at Global Defense Insight.</p>
-        <a href="https://defensetalks.com/the-impact-of-cyberterrorism-on-global-security/" target="_blank" rel="noopener"
-           class="mt-4 inline-block px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500">Read Article</a>
-      </div>
-    </section>
+   <!-- ========== PUBLICATION + LINKEDIN ========== -->
+<section class="max-w-6xl mx-auto px-4 pb-16 grid md:grid-cols-2 gap-6 items-start">
+  <!-- Publication card (left) -->
+  <article class="card p-4 md:p-6 reveal grid grid-rows-[auto_1fr_auto]">
+    <img src="images/article.jpeg"
+         class="rounded-2xl border border-white/10 shadow-2xl"
+         alt="Cyberterrorism article cover" loading="lazy" decoding="async">
+    <div class="mt-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Publication</h2>
+      <p class="mt-2 text-white/80">
+        My op-ed on cyberterrorism’s impact on global security, published at Global Defense Insight.
+      </p>
+    </div>
+    <a href="https://defensetalks.com/the-impact-of-cyberterrorism-on-global-security/"
+       target="_blank" rel="noopener"
+       class="mt-4 inline-block px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500">Read Article</a>
+  </article>
 
+  <!-- LinkedIn badge card (right) -->
+  <aside class="card p-6 reveal">
+    <h3 class="text-xl md:text-2xl font-bold">LinkedIn</h3>
+    <p class="text-white/70 mt-1">Connect with me on LinkedIn.</p>
+
+    <!-- Wrapper adds subtle border/glass look (CSS already exists) -->
+    <div class="li-badge-wrapper mt-4">
+      <!-- ✅ Replace data-vanity and href with your actual LinkedIn vanity URL -->
+      <div class="badge-base LI-profile-badge"
+           data-locale="en_US" data-size="large" data-theme="dark"
+           data-type="VERTICAL" data-vanity="muhammad-waleed-akhtar"
+           data-version="v1">
+        <a class="badge-base__link LI-simple-link"
+           href="https://www.linkedin.com/in/muhammad-waleed-akhtar/">Muhammad Waleed Akhtar</a>
+      </div>
+    </div>
+  </aside>
+</section>
+    <!-- ========== END PUBLICATION + LINKEDIN ========== -->
     <!-- ========== FINAL CTA ========== -->
     <section class="max-w-6xl mx-auto px-4 pb-20">
       <div class="card p-8 text-center reveal">
@@ -233,5 +283,10 @@
   </footer>
 
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 </html>

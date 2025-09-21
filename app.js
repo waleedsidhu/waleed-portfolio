@@ -26,15 +26,18 @@
     if (prefersReduced || !window.gsap) return;
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-    const img = qs('.hero-img');
+    const img   = qs('.hero-img');
+    const name  = qs('.hero-name'); // added
     const title = qs('.hero-title');
-    const sub = qs('.hero-sub');
-    const ctas = qsa('.hero-ctas > *');
+    const sub   = qs('.hero-sub');
+    const ctas  = qsa('.hero-ctas > *');
 
-    if (img)  tl.from(img,   { y: 24, opacity: 0, duration: 0.7 });
-    if (title)tl.from(title, { y: 28, opacity: 0, duration: 0.65 }, '-=0.45');
-    if (sub)  tl.from(sub,   { y: 18, opacity: 0, duration: 0.55 }, '-=0.35');
-    if (ctas.length) tl.from(ctas, { y: 14, opacity: 0, duration: 0.45, stagger: 0.07 }, '-=0.25');
+    if (img)   tl.from(img,   { y: 24, opacity: 0, duration: 0.7 });
+    if (name)  tl.from(name,  { y: 22, opacity: 0, duration: 0.6 },  '-=0.45'); // added
+    if (title) tl.from(title, { y: 28, opacity: 0, duration: 0.65 }, '-=0.45');
+    if (sub)   tl.from(sub,   { y: 18, opacity: 0, duration: 0.55 }, '-=0.35');
+    if (ctas.length)
+      tl.from(ctas, { y: 14, opacity: 0, duration: 0.45, stagger: 0.07 }, '-=0.25');
   }
 
   /* ---------- Scroll reveals & counters ---------- */
@@ -162,6 +165,7 @@
 
   /* ---------- Active nav ---------- */
   /* (called in boot + after swup replace) */
+
   /* ---------- Swup transitions ---------- */
   const overlayEnter = () => {
     if (prefersReduced || !window.gsap) return { eventCallback: (_, cb) => cb && cb() };
@@ -187,6 +191,11 @@
   document.addEventListener('DOMContentLoaded', () => {
     boot();
 
+    // ✅ Render LinkedIn badge on first load
+    if (typeof window.LIRenderAll === 'function') {
+      try { window.LIRenderAll(); } catch (e) {}
+    }
+
     // Swup page transitions
     const swup = new Swup({
       containers: ['#swup'],
@@ -200,20 +209,12 @@
     // Re-init after each content replace
     swup.hooks.on('content:replace', () => {
       if (window.ScrollTrigger) window.ScrollTrigger.getAll().forEach(t => t.kill());
-      if (window.gsap) gsap.set('#transition-overlay', { yPercent: -100 });
       boot();
 
-      // If a LinkedIn badge exists on the new page, ask LI to render it (safe no-op elsewhere)
+      // ✅ Re-render LinkedIn badge after Swup transition
       if (typeof window.LIRenderAll === 'function') {
-        try { window.LIRenderAll(); } catch(e){}
+        try { window.LIRenderAll(); } catch (e) {}
       }
     });
-
-    // Optional: Service worker for better caching (ignore errors silently)
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js').catch(()=>{});
-      });
-    }
   });
 })();
