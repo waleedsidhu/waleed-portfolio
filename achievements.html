@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Achievements — Muhammad Waleed Akhtar</title>
-  <meta name="description" content="Publications, awards, promotion, memberships, experience letters, and certifications." />
+  <meta name="description" content="Awards & Promotion, Experience Letters, and Certifications of Muhammad Waleed Akhtar." />
 
   <!-- Favicon / PWA -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -13,15 +13,23 @@
   <meta property="og:site_name" content="Muhammad Waleed Akhtar">
   <meta name="twitter:card" content="summary_large_image">
 
+  <!-- Tailwind + site CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- GSAP + ScrollTrigger -->
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Swup + plugin -->
   <script defer src="https://unpkg.com/swup@4"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/@swup/js-plugin@3.2.0/dist/js-plugin.umd.js"></script>
+
+  <!-- App JS -->
   <script defer src="assets/js/app.js"></script>
 </head>
 <body class="bg-slate-950 text-white">
+
   <!-- Transition overlay -->
   <div id="transition-overlay" aria-hidden="true">
     <span class="panel panel-1"></span><span class="panel panel-2"></span>
@@ -43,176 +51,162 @@
 
   <!-- Page container -->
   <main id="swup" class="transition-page">
-
-    <!-- Title -->
     <section class="max-w-6xl mx-auto px-4 pt-14">
       <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Achievements</h1>
-      <p class="mt-3 text-white/75">Publications • Memberships • Awards & Promotion • Experience Letters • Certifications</p>
+      <p class="mt-3 text-white/75">Awards & Promotion, Experience Letters, and Certifications.</p>
     </section>
 
-    <!-- Publication -->
-    <section class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-[320px_1fr] gap-6 items-center">
-      <img src="images/certs/article.jpeg" alt="Article — The Impact of Cyberterrorism on Global Security" class="rounded-2xl border border-white/10 shadow-2xl reveal">
-      <div class="reveal">
-        <h2 class="text-2xl font-bold">Publication</h2>
-        <h3 class="text-xl mt-1 font-semibold">The Impact of Cyberterrorism on Global Security</h3>
-        <p class="mt-2 text-white/80">My first op-ed published by Global Defense Insight.</p>
-        <a href="https://lnkd.in/d6a37EVm" target="_blank" class="mt-4 inline-block px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500">Read Article</a>
-      </div>
-    </section>
-
-    <!-- Memberships & Organizations -->
-    <section class="max-w-6xl mx-auto px-4 pb-8">
-      <h2 class="text-2xl font-bold mb-4">Memberships & Organizations</h2>
-      <div class="grid sm:grid-cols-2 gap-6">
-        <a target="_blank" rel="noopener" href="https://youthgroup.ctbto.org/" class="card p-5 flex items-start gap-4 reveal">
-          <div class="chip">CTBTO Youth Group</div>
-          <div>
-            <div class="font-semibold">Member · Aug 2024 – Present</div>
-            <p class="text-white/75 text-sm mt-1">Workshops, policy discussions, and CTBT awareness (associated with Global Defense Insight).</p>
-          </div>
-        </a>
-        <a target="_blank" rel="noopener" href="https://www.wins.org/" class="card p-5 flex items-start gap-4 reveal">
-          <div class="chip">WINS</div>
-          <div>
-            <div class="font-semibold">World Institute for Nuclear Security · Member</div>
-            <p class="text-white/75 text-sm mt-1">Engage with best practices, webinars, and networks on global nuclear security.</p>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Awards & Promotion -->
-    <section class="max-w-6xl mx-auto px-4 pb-6">
-      <h2 class="text-2xl font-bold mb-4">Awards & Promotion</h2>
-      <div class="grid sm:grid-cols-2 gap-6">
-        <figure class="card p-3 reveal gallery-item" data-caption="SkilledForce — Certificate of Appreciation">
-          <img src="images/certs/skilledforce certificate.jpeg" alt="Certificate of Appreciation — SkilledForce" class="rounded-lg w-full object-cover">
-          <figcaption class="mt-3 text-white/80 text-sm">
-            <strong>Certificate of Appreciation</strong> — Recognized by CEO Mubashir Hassan for onboarding leadership, SOPs, and productivity improvements.
-          </figcaption>
+    <!-- ========== Awards & Promotion ========== -->
+    <section class="max-w-6xl mx-auto px-4 py-8">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Awards & Promotion</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- SkilledForce — Promotion Letter -->
+        <figure class="gallery-item card p-3 reveal" data-caption="SkilledForce — Promotion to HR & Payroll Manager (Effective Aug 1, 2025)">
+          <img src="images/1755120016602.jpeg" alt="SkilledForce Promotion Letter"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">SkilledForce — Promotion Letter</figcaption>
         </figure>
-        <figure class="card p-3 reveal gallery-item" data-caption="SkilledForce — Promotion Letter to HR & Payroll Manager (Aug 1, 2025)">
-          <img src="images/certs/1755120016602.jpeg" alt="Promotion Letter — HR & Payroll Manager, SkilledForce" class="rounded-lg w-full object-cover">
-          <figcaption class="mt-3 text-white/80 text-sm">
-            <strong>Promotion Letter</strong> — Promoted to <em>HR & Payroll Manager</em> at SkilledForce (effective Aug 1, 2025).
-          </figcaption>
+
+        <!-- SkilledForce — Certificate of Appreciation -->
+        <figure class="gallery-item card p-3 reveal" data-caption="SkilledForce — Certificate of Appreciation">
+          <img src="images/skilledforce%20certificate.jpeg" alt="SkilledForce Certificate of Appreciation"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">SkilledForce — Certificate of Appreciation</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- Experience Letters -->
-    <section class="max-w-6xl mx-auto px-4 pb-6">
-      <h2 class="text-2xl font-bold mb-4">Experience Letters</h2>
-      <div class="grid sm:grid-cols-2 gap-6">
-        <figure class="card p-3 reveal gallery-item" data-caption="Experience Letter — Global Defense Insight (Research Fellow)">
-          <img src="images/certs/1727813653496.jpeg" alt="Experience Letter — Global Defense Insight" class="rounded-lg w-full object-cover">
-          <figcaption class="mt-3 text-white/80 text-sm">
-            <strong>Global Defense Insight</strong> — Research Fellow (Jul–Sep 2024), research & analysis on cyberterrorism and global security.
-          </figcaption>
+    <!-- ========== Experience Letters ========== -->
+    <section class="max-w-6xl mx-auto px-4 py-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Experience Letters</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Global Defense Insight — Experience Letter -->
+        <figure class="gallery-item card p-3 reveal" data-caption="Global Defense Insight — Experience Letter (Research Fellow)">
+          <img src="images/1727813653496.jpeg" alt="GDI Experience Letter"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">Global Defense Insight — Experience Letter</figcaption>
         </figure>
+
+        <!-- (Optional) SkilledForce Experience Letter — add when available -->
+        <!--
+        <figure class="gallery-item card p-3 reveal" data-caption="SkilledForce — Experience Letter">
+          <img src="images/skilledforce-experience-letter.jpg" alt="SkilledForce Experience Letter"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">SkilledForce — Experience Letter</figcaption>
+        </figure>
+        -->
       </div>
     </section>
 
-    <!-- Certifications -->
-    <section class="max-w-6xl mx-auto px-4 pb-16">
-      <h2 class="text-2xl font-bold mb-4">Certifications</h2>
-
-      <ul class="mb-6 text-white/80 text-sm list-disc pl-5">
-        <li>Reuters — <em>Introduction to Digital Journalism</em></li>
-        <li>UNODA — UNSGM (CBRN) Online Short Course</li>
-        <li>UNODA — CCW & Protocols</li>
-        <li>UNODA — Humanitarian Approaches to Nuclear Disarmament</li>
-        <li>UNODA — Lethal Autonomous Weapon Systems (LAWS)</li>
-        <li>UNODA — Outer Space Online Course (Introductory)</li>
-        <li>UNODA — Youth & Disarmament</li>
-        <li>UNODA — Introduction to Disarmament</li>
-        <li>UNODA/UNITAR — Gender-mainstreaming Small Arms Control</li>
-        <li>UNODA — Gender Perspectives on Disarmament</li>
-        <li>Global Defense Insight — Internship Certificate</li>
-        <li>IIUI — Arabic Language Certificate & Merit (2nd position)</li>
-        <li>Islami Tarbiyyati Course (اسلامی تربیتی کورس)</li>
-        <li>Introduction to World Religions (Comparative Religions)</li>
-      </ul>
+    <!-- ========== Certifications ========== -->
+    <section class="max-w-6xl mx-auto px-4 py-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Certifications</h2>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Reuters -->
-        <figure class="card p-3 reveal gallery-item" data-caption="Reuters — Introduction to Digital Journalism">
-          <img src="images/certs/1722599918242.jpeg" alt="Reuters certificate — Introduction to Digital Journalism" class="rounded-lg w-full object-cover">
+        <figure class="gallery-item card p-3 reveal" data-caption="Reuters — Introduction to Digital Journalism">
+          <img src="images/1722599918242.jpeg" alt="Reuters Introduction to Digital Journalism"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">Reuters — Intro to Digital Journalism</figcaption>
         </figure>
 
-        <!-- UNODA: UNSGM -->
-        <figure class="card p-3 reveal gallery-item" data-caption="UNODA — UNSGM (CBRN)">
-          <img src="images/certs/1725441488734.jpeg" alt="UNODA UNSGM certificate" class="rounded-lg w-full object-cover">
+        <!-- UNODA set (examples, add as many as you like) -->
+        <figure class="gallery-item card p-3 reveal" data-caption="UNODA — Humanitarian Approaches to Nuclear Disarmament">
+          <img src="images/1725628503657.jpeg" alt="UNODA Humanitarian Approaches to Nuclear Disarmament"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">UNODA — Humanitarian Approaches</figcaption>
         </figure>
 
-        <!-- UNODA: CCW -->
-        <figure class="card p-3 reveal gallery-item" data-caption="UNODA — CCW & Protocols">
-          <img src="images/certs/1725441487717.jpeg" alt="UNODA CCW certificate" class="rounded-lg w-full object-cover">
+        <figure class="gallery-item card p-3 reveal" data-caption="UNODA — Lethal Autonomous Weapon Systems (LAWS)">
+          <img src="images/1725628503598.jpeg" alt="UNODA LAWS"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">UNODA — LAWS</figcaption>
         </figure>
 
-        <!-- UNODA: Humanitarian Approaches to Nuclear Disarmament -->
-        <figure class="card p-3 reveal gallery-item" data-caption="UNODA — Humanitarian Approaches to Nuclear Disarmament">
-          <img src="images/certs/1725628503657.jpeg" alt="UNODA Humanitarian Approaches certificate" class="rounded-lg w-full object-cover">
+        <figure class="gallery-item card p-3 reveal" data-caption="UNODA — Outer Space (Introductory)">
+          <img src="images/1725628503117.jpeg" alt="UNODA Outer Space Intro"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">UNODA — Outer Space</figcaption>
         </figure>
 
-        <!-- UNODA: LAWS -->
-        <figure class="card p-3 reveal gallery-item" data-caption="UNODA — Lethal Autonomous Weapon Systems (LAWS)">
-          <img src="images/certs/1751800536306.jpeg" alt="UNODA LAWS certificate" class="rounded-lg w-full object-cover">
+        <figure class="gallery-item card p-3 reveal" data-caption="UNODA — Youth & Disarmament">
+          <img src="images/1727179326271.jpeg" alt="UNODA Youth and Disarmament"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">UNODA — Youth & Disarmament</figcaption>
         </figure>
 
-        <!-- UNODA: Outer Space -->
-        <figure class="card p-3 reveal gallery-item" data-caption="UNODA — Outer Space Online Course (Introductory)">
-          <img src="images/certs/1724338468278.jpeg" alt="UNODA Outer Space certificate" class="rounded-lg w-full object-cover">
+        <figure class="gallery-item card p-3 reveal" data-caption="UNODA — Introduction to Disarmament">
+          <img src="images/1727179325726.jpeg" alt="UNODA Introduction to Disarmament"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">UNODA — Introduction to Disarmament</figcaption>
         </figure>
 
-        <!-- UNODA: Youth & Disarmament -->
-        <figure class="card p-3 reveal gallery-item" data-caption="UNODA — Youth & Disarmament">
-          <img src="images/certs/1725628503598.jpeg" alt="UNODA Youth & Disarmament certificate" class="rounded-lg w-full object-cover">
+        <figure class="gallery-item card p-3 reveal" data-caption="UNODA — CCW & Its Protocols">
+          <img src="images/1724338466785.jpeg" alt="UNODA CCW and Protocols"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">UNODA — CCW & Protocols</figcaption>
         </figure>
 
-        <!-- UNODA: Introduction to Disarmament -->
-        <figure class="card p-3 reveal gallery-item" data-caption="UNODA — Introduction to Disarmament">
-          <img src="images/certs/1725628503117.jpeg" alt="UNODA Introduction to Disarmament certificate" class="rounded-lg w-full object-cover">
+        <figure class="gallery-item card p-3 reveal" data-caption="UNODA — UNSGM for Investigation of Alleged Use of CBRN">
+          <img src="images/1724338468278.jpeg" alt="UNSGM Course"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">UNODA — UNSGM (CBRN)</figcaption>
         </figure>
 
-        <!-- UNODA/UNITAR: Gender-mainstreaming Small Arms Control -->
-        <figure class="card p-3 reveal gallery-item" data-caption="UNODA/UNITAR — Gender-mainstreaming Small Arms Control">
-          <img src="images/certs/1725903769352.jpeg" alt="Gender-mainstreaming Small Arms Control certificate" class="rounded-lg w-full object-cover">
+        <figure class="gallery-item card p-3 reveal" data-caption="UNODA/UNITAR — Gender-mainstreaming Small Arms Control">
+          <img src="images/1725903769793.jpeg" alt="UNITAR Gender Mainstreaming Small Arms"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">UNITAR — Small Arms Control</figcaption>
         </figure>
 
-        <!-- UNODA: Gender Perspectives on Disarmament -->
-        <figure class="card p-3 reveal gallery-item" data-caption="UNODA — Gender Perspectives on Disarmament">
-          <img src="images/certs/1725903769793.jpeg" alt="Gender Perspectives on Disarmament certificate" class="rounded-lg w-full object-cover">
+        <!-- Arabic Language — IIUI (certificate + merit) -->
+        <figure class="gallery-item card p-3 reveal" data-caption="IIUI — Arabic Language Certificate">
+          <img src="images/1725903769352.jpeg" alt="IIUI Arabic Language Certificate"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">IIUI — Arabic Language</figcaption>
+        </figure>
+
+        <figure class="gallery-item card p-3 reveal" data-caption="IIUI — Arabic Language Merit (Second Position)">
+          <img src="images/1725903769793%20(1).jpeg" alt="IIUI Arabic Language Merit"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">IIUI — Arabic Merit (2nd Position)</figcaption>
         </figure>
 
         <!-- GDI Internship Certificate -->
-        <figure class="card p-3 reveal gallery-item" data-caption="Global Defense Insight — Internship Certificate">
-          <img src="images/certs/1724338466785.jpeg" alt="GDI Internship certificate" class="rounded-lg w-full object-cover">
+        <figure class="gallery-item card p-3 reveal" data-caption="Global Defense Insight — Certificate of Internship">
+          <img src="images/1751800536306.jpeg" alt="GDI Internship Certificate"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">GDI — Internship Certificate</figcaption>
         </figure>
 
-        <!-- IIUI Arabic Language Certificate -->
-        <figure class="card p-3 reveal gallery-item" data-caption="IIUI — Arabic Language Certificate">
-          <img src="images/certs/1727179326271.jpeg" alt="IIUI Arabic Language Certificate" class="rounded-lg w-full object-cover">
+        <!-- NEW (last two you asked to add) -->
+        <figure class="gallery-item card p-3 reveal" data-caption="Islami Tarbiyyati Course — International Institute of Islamic Learning">
+          <img src="images/1743018094729.jpeg" alt="Islami Tarbiyyati Course Certificate"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">Islami Tarbiyyati Course</figcaption>
         </figure>
 
-        <!-- IIUI Merit (Second Position) -->
-        <figure class="card p-3 reveal gallery-item" data-caption="IIUI — Arabic Language Merit (Second Position)">
-          <img src="images/certs/1727179325726.jpeg" alt="IIUI Arabic Language Merit Certificate" class="rounded-lg w-full object-cover">
-        </figure>
-
-        <!-- Islami Tarbiyyati Course -->
-        <figure class="card p-3 reveal gallery-item" data-caption="Islami Tarbiyyati Course (اسلامی تربیتی کورس) — 10-day online course">
-          <img src="images/certs/1743018094729.jpeg" alt="Islami Tarbiyyati Course Certificate" class="rounded-lg w-full object-cover">
-        </figure>
-
-        <!-- Introduction to World Religions (Comparative Religions) -->
-        <figure class="card p-3 reveal gallery-item" data-caption="Introduction to World Religions (Comparative Religions)">
-          <img src="images/certs/1743018741154.jpeg" alt="Introduction to World Religions Certificate" class="rounded-lg w-full object-cover">
+        <figure class="gallery-item card p-3 reveal" data-caption="An Introduction to World Religions — International Institute of Islamic Learning">
+          <img src="images/1743018741154.jpeg" alt="Introduction to World Religions Certificate"
+               class="w-full h-44 md:h-52 rounded-xl object-cover border border-white/10" />
+          <figcaption class="mt-2 text-sm text-white/70">Introduction to World Religions</figcaption>
         </figure>
       </div>
+
+      <p class="text-white/60 text-xs mt-6">Tip: Click any certificate to view it larger.</p>
     </section>
   </main>
+
+  <!-- Lightbox (shared across the page) -->
+  <div id="lightbox" class="fixed inset-0 bg-black/80 hidden z-50 p-4 md:p-8">
+    <div class="max-w-5xl mx-auto relative">
+      <button id="lightbox-close" class="absolute -top-2 -right-2 bg-white/10 hover:bg-white/20 rounded-full p-2">
+        <span class="sr-only">Close</span>✕
+      </button>
+      <img id="lightbox-img" src="" alt="" class="w-full rounded-xl border border-white/10 shadow-2xl object-contain max-h-[80vh]" />
+      <div id="lightbox-cap" class="text-sm text-white/80 mt-3"></div>
+    </div>
+  </div>
 
   <!-- Footer (persist) -->
   <footer class="border-t border-white/10" data-swup-persist="footer">
@@ -220,20 +214,11 @@
       <span>© <span id="y"></span> Muhammad Waleed Akhtar — HR & Workforce Management</span>
       <div class="flex items-center gap-4">
         <a class="hover:text-white/90" href="mailto:waleedsidhu91@gmail.com">Email</a>
-        <a class="hover:text-white/90" href="https://www.linkedin.com/in/muhammadwaleedakhtar" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="hover:text-white/90" href="skills.html">Skills</a>
         <a class="hover:text-white/90" href="contact.html">Contact</a>
       </div>
     </div>
   </footer>
-
-  <!-- Lightbox -->
-  <div id="lightbox" class="fixed inset-0 bg-black/90 hidden items-center justify-center p-4 z-[60]">
-    <button id="lightbox-close" class="absolute top-5 right-5 text-white/80 hover:text-white text-2xl">×</button>
-    <figure class="max-w-5xl w-full">
-      <img id="lightbox-img" src="" alt="" class="w-full h-auto rounded-xl border border-white/20 shadow-2xl">
-      <figcaption id="lightbox-cap" class="text-white/80 mt-3 text-center text-sm"></figcaption>
-    </figure>
-  </div>
 
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
