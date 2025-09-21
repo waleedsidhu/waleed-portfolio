@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact — Muhammad Waleed Akhtar</title>
-  <meta name="description" content="Contact Muhammad Waleed Akhtar for HR strategy, KPI frameworks, payroll/HRIS excellence, and workforce training.">
+  <meta name="description" content="Contact Muhammad Waleed Akhtar (HR & Payroll Manager) — email, phone, and LinkedIn." />
 
   <!-- Favicon / PWA -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -13,7 +13,7 @@
   <meta property="og:site_name" content="Muhammad Waleed Akhtar">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Tailwind -->
+  <!-- Tailwind + site CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/main.css" />
 
@@ -29,7 +29,8 @@
   <script defer src="assets/js/app.js"></script>
 </head>
 <body class="bg-slate-950 text-white">
-  <!-- Transition overlay -->
+
+  <!-- Page transition overlay -->
   <div id="transition-overlay" aria-hidden="true">
     <span class="panel panel-1"></span><span class="panel panel-2"></span>
   </div>
@@ -48,168 +49,92 @@
     </nav>
   </header>
 
-  <!-- Page container -->
-  <main id="swup" class="transition-page">
+  <!-- Swup container -->
+  <main id="swup" class="transition-page" role="main">
+
+    <!-- Title -->
     <section class="max-w-6xl mx-auto px-4 pt-14">
-      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Let’s Work Together</h1>
-      <p class="mt-3 text-white/75">HR strategy, KPI frameworks, payroll/HRIS excellence, or workforce training.</p>
+      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Contact</h1>
+      <p class="mt-3 text-white/75">Let’s connect about HR strategy, KPI frameworks, payroll/HRIS, and workforce training.</p>
     </section>
 
-    <section class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-6 items-stretch">
-      <!-- Contact card -->
-      <div class="card p-8 flex flex-col justify-center reveal">
-        <div class="space-y-1">
-          <div class="text-sm text-white/60">Location</div>
-          <div class="font-medium">Islamabad, Pakistan</div>
-        </div>
-        <div class="mt-4 space-y-1">
-          <div class="text-sm text-white/60">Email</div>
-          <a href="mailto:waleedsidhu91@gmail.com" class="font-medium underline">waleedsidhu91@gmail.com</a>
-        </div>
-        <div class="mt-4 space-y-1">
-          <div class="text-sm text-white/60">Phone</div>
-          <a href="tel:+923047389023" class="font-medium underline">+92 304 738 9023</a>
+    <!-- Simple contact cards -->
+    <section class="max-w-6xl mx-auto px-4 py-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card p-6 reveal">
+        <div class="text-sm text-white/60">Location</div>
+        <div class="mt-1 font-semibold">Islamabad, Pakistan</div>
+      </div>
+      <div class="card p-6 reveal">
+        <div class="text-sm text-white/60">Email</div>
+        <a href="mailto:waleedsidhu91@gmail.com" class="mt-1 font-semibold underline">waleedsidhu91@gmail.com</a>
+      </div>
+      <div class="card p-6 reveal">
+        <div class="text-sm text-white/60">Phone / WhatsApp</div>
+        <a href="tel:+923047389023" class="mt-1 font-semibold underline">+92 304 738 9023</a>
+      </div>
+    </section>
+
+    <!-- Centered LinkedIn badge (not in footer) -->
+    <section class="max-w-3xl mx-auto px-4 pb-12">
+      <div class="card p-6 reveal text-center">
+        <h2 class="text-xl font-bold mb-3">Connect on LinkedIn</h2>
+        <p class="text-white/70 text-sm mb-4">Prefer LinkedIn? Here’s my verified profile badge.</p>
+
+        <!-- LinkedIn SDK (loads once; harmless on other pages) -->
+        <script async defer type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js"></script>
+
+        <!-- Badge -->
+        <div class="li-badge-wrapper inline-block" style="transform-origin:center;">
+          <div class="badge-base LI-profile-badge"
+               data-locale="en_US"
+               data-size="medium"
+               data-theme="dark"
+               data-type="HORIZONTAL"
+               data-vanity="muhammadwaleedakhtar"
+               data-version="v1">
+            <a class="badge-base__link LI-simple-link"
+               href="https://pk.linkedin.com/in/muhammadwaleedakhtar?trk=profile-badge">Muhammad Waleed Akhtar</a>
+          </div>
         </div>
 
-        <div class="mt-6 flex flex-wrap gap-3">
+        <noscript class="block text-white/60 text-xs mt-3">
+          JavaScript is disabled. Visit my profile:
+          <a class="underline" href="https://pk.linkedin.com/in/muhammadwaleedakhtar" target="_blank" rel="noopener">linkedin.com/in/muhammadwaleedakhtar</a>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+      <div class="card p-8 text-center reveal">
+        <h2 class="text-2xl md:text-3xl font-bold">Ready to talk?</h2>
+        <p class="text-white/75 mt-2">Send an email with your goals and timeline, and I’ll reply promptly.</p>
+        <div class="mt-5 flex flex-wrap gap-3 justify-center">
           <a href="mailto:waleedsidhu91@gmail.com" class="px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition font-medium">Email Me</a>
           <a href="assets/resume.pdf" download class="px-5 py-3 rounded-xl border border-white/20 hover:border-white/40 transition font-medium">Download Resume</a>
         </div>
-
-        <!-- Quick external links (companies/education) -->
-        <div class="mt-8 grid grid-cols-2 gap-3">
-          <a class="chip hover:opacity-90" target="_blank" rel="noopener" href="https://skilledforce.co/">SkilledForce</a>
-          <a class="chip hover:opacity-90" target="_blank" rel="noopener" href="https://defensetalks.com/">Global Defense Insight</a>
-          <a class="chip hover:opacity-90" target="_blank" rel="noopener" href="https://www.nausal.com/">Nausal</a>
-          <a class="chip hover:opacity-90" target="_blank" rel="noopener" href="https://www.careerbooster.ai/">CareerBooster.Ai</a>
-          <a class="chip hover:opacity-90" target="_blank" rel="noopener" href="https://www.offsetup.com/">OffSetup</a>
-          <a class="chip hover:opacity-90" target="_blank" rel="noopener" href="https://www.365sol.com/">365Sol</a>
-          <a class="chip hover:opacity-90" target="_blank" rel="noopener" href="https://bkassociates.co/">BK Associates</a>
-          <a class="chip hover:opacity-90" target="_blank" rel="noopener" href="https://www.iiu.edu.pk/">IIUI</a>
-          <a class="chip hover:opacity-90" target="_blank" rel="noopener" href="https://youthgroup.ctbto.org/">CTBTO Youth Group</a>
-          <a class="chip hover:opacity-90" target="_blank" rel="noopener" href="https://www.wins.org/">WINS</a>
-        </div>
-      </div>
-
-      <!-- Right column: compact LinkedIn badge (mounted by JS; no script tag needed here) -->
-      <div class="card p-6 flex items-center justify-center reveal">
-        <div class="w-full">
-          <h3 class="text-lg font-semibold mb-3 text-center md:text-left">Connect on LinkedIn</h3>
-          <div id="li-badge-spot" class="li-mini"></div>
-        </div>
       </div>
     </section>
 
-    <!-- ===== LIVE WEBSITES ===== -->
-    <section class="max-w-6xl mx-auto px-4 pb-16">
-      <h2 class="text-2xl md:text-3xl font-bold mb-5">Live Websites</h2>
-
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <a class="card p-5 reveal flex items-start justify-between gap-4"
-           href="https://youthgroup.ctbto.org/" target="_blank" rel="noopener noreferrer" aria-label="CTBTO Youth Group">
-          <div>
-            <div class="font-semibold">CTBTO Youth Group</div>
-            <p class="text-white/70 text-sm mt-1">Official website</p>
-          </div>
-          <span aria-hidden="true">↗</span>
-        </a>
-
-        <a class="card p-5 reveal flex items-start justify-between gap-4"
-           href="https://www.wins.org/" target="_blank" rel="noopener noreferrer" aria-label="World Institute for Nuclear Security">
-          <div>
-            <div class="font-semibold">WINS — World Institute for Nuclear Security</div>
-            <p class="text-white/70 text-sm mt-1">Official website</p>
-          </div>
-          <span aria-hidden="true">↗</span>
-        </a>
-
-        <a class="card p-5 reveal flex items-start justify-between gap-4"
-           href="https://www.offsetup.com/" target="_blank" rel="noopener noreferrer" aria-label="OffSetup">
-          <div>
-            <div class="font-semibold">OffSetup</div>
-            <p class="text-white/70 text-sm mt-1">Official website</p>
-          </div>
-          <span aria-hidden="true">↗</span>
-        </a>
-
-        <a class="card p-5 reveal flex items-start justify-between gap-4"
-           href="https://www.365sol.com/" target="_blank" rel="noopener noreferrer" aria-label="365Sol">
-          <div>
-            <div class="font-semibold">365Sol</div>
-            <p class="text-white/70 text-sm mt-1">Official website</p>
-          </div>
-          <span aria-hidden="true">↗</span>
-        </a>
-
-        <a class="card p-5 reveal flex items-start justify-between gap-4"
-           href="https://bkassociates.co/" target="_blank" rel="noopener noreferrer" aria-label="BK Associates">
-          <div>
-            <div class="font-semibold">BK Associates</div>
-            <p class="text-white/70 text-sm mt-1">Official website</p>
-          </div>
-          <span aria-hidden="true">↗</span>
-        </a>
-
-        <a class="card p-5 reveal flex items-start justify-between gap-4"
-           href="https://defensetalks.com/" target="_blank" rel="noopener noreferrer" aria-label="DefenseTalks / Global Defense Insight">
-          <div>
-            <div class="font-semibold">DefenseTalks / Global Defense Insight</div>
-            <p class="text-white/70 text-sm mt-1">Official website</p>
-          </div>
-          <span aria-hidden="true">↗</span>
-        </a>
-
-        <a class="card p-5 reveal flex items-start justify-between gap-4"
-           href="https://skilledforce.co/" target="_blank" rel="noopener noreferrer" aria-label="SkilledForce">
-          <div>
-            <div class="font-semibold">SkilledForce</div>
-            <p class="text-white/70 text-sm mt-1">Official website</p>
-          </div>
-          <span aria-hidden="true">↗</span>
-        </a>
-
-        <a class="card p-5 reveal flex items-start justify-between gap-4"
-           href="https://www.nausal.com/" target="_blank" rel="noopener noreferrer" aria-label="Nausal Technologies">
-          <div>
-            <div class="font-semibold">Nausal Technologies</div>
-            <p class="text-white/70 text-sm mt-1">Official website</p>
-          </div>
-          <span aria-hidden="true">↗</span>
-        </a>
-
-        <a class="card p-5 reveal flex items-start justify-between gap-4"
-           href="https://www.careerbooster.ai/" target="_blank" rel="noopener noreferrer" aria-label="CareerBooster.Ai">
-          <div>
-            <div class="font-semibold">CareerBooster.Ai</div>
-            <p class="text-white/70 text-sm mt-1">Official website</p>
-          </div>
-          <span aria-hidden="true">↗</span>
-        </a>
-
-        <a class="card p-5 reveal flex items-start justify-between gap-4"
-           href="https://www.iiu.edu.pk/" target="_blank" rel="noopener noreferrer" aria-label="International Islamic University Islamabad">
-          <div>
-            <div class="font-semibold">IIUI — International Islamic University Islamabad</div>
-            <p class="text-white/70 text-sm mt-1">Official website</p>
-          </div>
-          <span aria-hidden="true">↗</span>
-        </a>
-      </div>
-    </section>
   </main>
 
-  <!-- Footer (persist) -->
+  <!-- Footer (no LinkedIn badge here) -->
   <footer class="border-t border-white/10" data-swup-persist="footer">
     <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-white/70 flex flex-col md:flex-row items-center justify-between gap-3">
       <span>© <span id="y"></span> Muhammad Waleed Akhtar — HR & Workforce Management</span>
       <div class="flex items-center gap-4">
         <a class="hover:text-white/90" href="mailto:waleedsidhu91@gmail.com">Email</a>
-        <a class="hover:text-white/90" href="https://www.linkedin.com/in/muhammadwaleedakhtar" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="hover:text-white/90" href="contact.html">Contact</a>
+        <a class="hover:text-white/90" href="experience.html">Experience</a>
+        <a class="hover:text-white/90" href="skills.html">Skills</a>
       </div>
     </div>
   </footer>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // Ensure LinkedIn badge renders after Swup transitions
+    document.addEventListener('DOMContentLoaded', () => { window.LIRenderAll && window.LIRenderAll(); });
+    document.addEventListener('swup:contentReplaced', () => { window.LIRenderAll && window.LIRenderAll(); });
+  </script>
 </body>
 </html>
