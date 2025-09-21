@@ -3,21 +3,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Skills — Muhammad Waleed Akhtar</title>
-  <meta name="description" content="Skills, tools and languages for HR leadership, KPI frameworks, payroll & HRIS, ATS, CRM training, and more.">
+  <title>Skills & Education — Muhammad Waleed Akhtar</title>
+  <meta name="description" content="Human Resources, Payroll, HRIS, KPI Tracking, Employee Engagement, Training & Development, ATS Compliance, CRM workflows, Career Branding, and more. Education: International Islamic University Islamabad." />
+
+  <!-- Favicon / PWA -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:site_name" content="Muhammad Waleed Akhtar">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Tailwind + site CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- GSAP + ScrollTrigger -->
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Swup + plugin -->
   <script defer src="https://unpkg.com/swup@4"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/@swup/js-plugin@3.2.0/dist/js-plugin.umd.js"></script>
+
+  <!-- App JS -->
   <script defer src="assets/js/app.js"></script>
 </head>
 <body class="bg-slate-950 text-white">
+
+  <!-- Transition overlay -->
   <div id="transition-overlay" aria-hidden="true">
     <span class="panel panel-1"></span><span class="panel panel-2"></span>
   </div>
 
+  <!-- Header (persist) -->
   <header class="sticky top-0 z-40 backdrop-blur bg-slate-950/70 border-b border-white/10" data-swup-persist="nav">
     <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <a href="index.html" class="font-bold tracking-wide hover:opacity-80">MUHAMMAD WALEED AKHTAR</a>
@@ -31,68 +49,122 @@
     </nav>
   </header>
 
+  <!-- Page container -->
   <main id="swup" class="transition-page">
+
+    <!-- Title -->
     <section class="max-w-6xl mx-auto px-4 pt-14">
-      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Skills & Tools</h1>
-      <p class="mt-3 text-white/75">Strategic HR leadership with measurable impact.</p>
+      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Skills & Education</h1>
+      <p class="mt-3 text-white/75">A focused stack for building accountable teams, scalable HR systems, and measurable business outcomes.</p>
     </section>
 
-    <section class="max-w-6xl mx-auto px-4 py-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="card p-5 reveal">HR Operations & Policy</div>
-      <div class="card p-5 reveal">Payroll, HRIS & Compliance</div>
-      <div class="card p-5 reveal">KPI Frameworks & Performance Systems</div>
-      <div class="card p-5 reveal">Employee Engagement & Retention</div>
-      <div class="card p-5 reveal">ATS Compliance & Career Branding</div>
-      <div class="card p-5 reveal">CRM (GoHighLevel) Training</div>
-      <div class="card p-5 reveal">Workflow Automation & SOPs</div>
-      <div class="card p-5 reveal">Team Leadership & Mentorship</div>
-      <div class="card p-5 reveal">Recruitment & Onboarding</div>
+    <!-- Skills grid (grouped) -->
+    <section class="max-w-6xl mx-auto px-4 py-10 grid lg:grid-cols-2 gap-6">
+
+      <!-- HR Operations -->
+      <article class="card p-6 reveal">
+        <h2 class="text-xl font-bold">HR Operations & Governance</h2>
+        <p class="text-white/75 mt-1">Designing resilient HR systems that align people strategy with business goals.</p>
+        <ul class="mt-4 space-y-2 list-disc pl-5 text-white/85">
+          <li>Human Resources · Payroll Management · HRIS</li>
+          <li>KPI Tracking & Performance Frameworks</li>
+          <li>ATS Compliance & Documentation</li>
+          <li>Recruitment, Onboarding & Employee Retention</li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="chip">HRIS</span><span class="chip">Payroll</span><span class="chip">Policies/SOPs</span><span class="chip">KPI</span>
+        </div>
+      </article>
+
+      <!-- People Development -->
+      <article class="card p-6 reveal">
+        <h2 class="text-xl font-bold">People Development & Engagement</h2>
+        <p class="text-white/75 mt-1">Building high-performance teams through clarity, coaching, and culture.</p>
+        <ul class="mt-4 space-y-2 list-disc pl-5 text-white/85">
+          <li>Training & Development · Workforce Coaching</li>
+          <li>Employee Engagement & Feedback Systems</li>
+          <li>Talent Development & Performance Reviews</li>
+          <li>Cross-Functional Leadership & Communication</li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="chip">Training</span><span class="chip">Engagement</span><span class="chip">Leadership</span><span class="chip">Retention</span>
+        </div>
+      </article>
+
+      <!-- Career Branding & ATS -->
+      <article class="card p-6 reveal">
+        <h2 class="text-xl font-bold">Career Branding & ATS Strategy</h2>
+        <p class="text-white/75 mt-1">Helping professionals present the right story to the right audience.</p>
+        <ul class="mt-4 space-y-2 list-disc pl-5 text-white/85">
+          <li>Resume Optimization (ATS-Compliant)</li>
+          <li>LinkedIn Strategy & Content Refresh</li>
+          <li>Recruiter Outreach & Job Search Execution</li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="chip">ATS</span><span class="chip">Resume Writing</span><span class="chip">LinkedIn</span>
+        </div>
+      </article>
+
+      <!-- Systems & Automation -->
+      <article class="card p-6 reveal">
+        <h2 class="text-xl font-bold">Systems, CRM & Workflow Automation</h2>
+        <p class="text-white/75 mt-1">Reducing manual work, accelerating onboarding, and improving consistency.</p>
+        <ul class="mt-4 space-y-2 list-disc pl-5 text-white/85">
+          <li>CRM Workflows & SOP Standardization</li>
+          <li>Workflow Automation & Documentation</li>
+          <li>Onboarding Time Reduction & Quality Control</li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="chip">CRM</span><span class="chip">Automation</span><span class="chip">SOPs</span><span class="chip">QA</span>
+        </div>
+      </article>
+
+      <!-- Research & Analysis -->
+      <article class="card p-6 reveal lg:col-span-2">
+        <h2 class="text-xl font-bold">Research & Analysis</h2>
+        <p class="text-white/75 mt-1">Investigative research, policy review, and analytical writing.</p>
+        <ul class="mt-4 space-y-2 list-disc pl-5 text-white/85">
+          <li>Research & Analysis · Report Writing</li>
+          <li>Cybersecurity & Global Security (publication at Global Defense Insight)</li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="chip">Research</span><span class="chip">Writing</span><span class="chip">Policy</span>
+          <a href="achievements.html" class="chip hover:opacity-90">See Certifications ↗</a>
+        </div>
+      </article>
     </section>
 
-    <!-- Impact stats -->
-    <section class="max-w-6xl mx-auto px-4 pb-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="card p-6 reveal"><div class="stat" data-counter="15">0</div><p class="text-white/70">SOPs standardized</p></div>
-      <div class="card p-6 reveal"><div class="stat"><span data-counter="25">0</span><span class="text-indigo-300">%</span></div><p class="text-white/70">Admin time reduced</p></div>
-      <div class="card p-6 reveal"><div class="stat"><span data-counter="25">0</span><span class="text-indigo-300">%</span></div><p class="text-white/70">Onboarding time reduced</p></div>
-      <div class="card p-6 reveal"><div class="stat"><span data-counter="20">0</span><span class="text-indigo-300">%</span></div><p class="text-white/70">Productivity improved</p></div>
-    </section>
-
-    <!-- Tools -->
-    <section class="max-w-6xl mx-auto px-4 pb-6">
-      <h2 class="text-2xl md:text-3xl font-bold mb-4">Tools</h2>
-      <div class="flex flex-wrap gap-2 reveal">
-        <span class="chip">HRIS</span>
-        <span class="chip">Payroll Systems</span>
-        <span class="chip">GoHighLevel CRM</span>
-        <span class="chip">ATS / LinkedIn Recruiter</span>
-        <span class="chip">Google Workspace</span>
-        <span class="chip">Docs · Sheets · Slides</span>
-      </div>
-    </section>
-
-    <!-- Languages -->
+    <!-- Education -->
     <section class="max-w-6xl mx-auto px-4 pb-16">
-      <h2 class="text-2xl md:text-3xl font-bold mb-4">Languages</h2>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div class="card p-5 reveal"><strong>Punjabi</strong> — Native/Bilingual</div>
-        <div class="card p-5 reveal"><strong>Urdu</strong> — Full Professional</div>
-        <div class="card p-5 reveal"><strong>English</strong> — Full Professional</div>
-        <div class="card p-5 reveal"><strong>German</strong> — Elementary</div>
-        <div class="card p-5 reveal"><strong>Arabic</strong> — Limited Working</div>
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Education</h2>
+      <div class="card p-6 reveal grid sm:grid-cols-[1fr_auto] gap-4 items-center">
+        <div>
+          <div class="text-lg font-semibold">Bachelor’s in International Relations</div>
+          <div class="text-white/75 mt-1">
+            <a href="https://www.iiu.edu.pk/" target="_blank" rel="noopener" class="underline decoration-indigo-400/50 hover:decoration-indigo-400">
+              International Islamic University, Islamabad (IIUI)
+            </a>
+          </div>
+          <div class="text-white/60 text-sm mt-1">Duration: 2022 – 2026 • Location: Islamabad, Pakistan</div>
+        </div>
+        <a href="assets/resume.pdf" download class="px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition font-medium justify-self-start sm:justify-self-end">Download Resume</a>
       </div>
     </section>
+
   </main>
 
+  <!-- Footer (persist) -->
   <footer class="border-t border-white/10" data-swup-persist="footer">
     <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-white/70 flex flex-col md:flex-row items-center justify-between gap-3">
       <span>© <span id="y"></span> Muhammad Waleed Akhtar — HR & Workforce Management</span>
       <div class="flex items-center gap-4">
         <a class="hover:text-white/90" href="mailto:waleedsidhu91@gmail.com">Email</a>
-        <a class="hover:text-white/90" href="https://www.linkedin.com/in/muhammadwaleedakhtar" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="hover:text-white/90" href="experience.html">Experience</a>
         <a class="hover:text-white/90" href="contact.html">Contact</a>
       </div>
     </div>
   </footer>
+
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
 </html>

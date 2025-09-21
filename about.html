@@ -4,7 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>About — Muhammad Waleed Akhtar</title>
-  <meta name="description" content="About Muhammad Waleed Akhtar — strategic HR leader focused on KPI frameworks, payroll & HRIS excellence, and workforce empowerment.">
+  <meta name="description" content="About Muhammad Waleed Akhtar — Transforming HR operations through strategic leadership, KPI frameworks, and workforce innovation.">
+
+  <!-- Favicon / PWA -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:site_name" content="Muhammad Waleed Akhtar">
+  <meta name="twitter:card" content="summary_large_image">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/main.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
@@ -14,10 +22,12 @@
   <script defer src="assets/js/app.js"></script>
 </head>
 <body class="bg-slate-950 text-white">
+  <!-- Transition overlay -->
   <div id="transition-overlay" aria-hidden="true">
     <span class="panel panel-1"></span><span class="panel panel-2"></span>
   </div>
 
+  <!-- Header (persist) -->
   <header class="sticky top-0 z-40 backdrop-blur bg-slate-950/70 border-b border-white/10" data-swup-persist="nav">
     <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <a href="index.html" class="font-bold tracking-wide hover:opacity-80">MUHAMMAD WALEED AKHTAR</a>
@@ -31,31 +41,45 @@
     </nav>
   </header>
 
+  <!-- Page container -->
   <main id="swup" class="transition-page">
     <section class="max-w-6xl mx-auto px-4 pt-14 grid lg:grid-cols-[280px_1fr] gap-8 items-start">
       <img src="images/waleed.jpg" alt="Muhammad Waleed Akhtar" class="rounded-2xl border border-white/10 shadow-2xl w-64 h-64 object-cover hero-img">
       <div>
         <h1 class="text-3xl md:text-5xl font-extrabold leading-tight hero-title">About Me</h1>
-        <p class="mt-4 text-white/80 hero-sub">
-          I’m <strong>Muhammad Waleed Akhtar</strong>, an HR & Payroll Manager at
-          <a class="underline decoration-indigo-400/50 hover:decoration-indigo-400" target="_blank" rel="noopener" href="https://skilledforce.co/">SkilledForce</a>.
-          I build <strong>KPI-based performance systems</strong>, run <strong>accurate payroll & HRIS</strong>, and design
-          <strong>employee engagement</strong> programs that help teams perform with clarity and consistency.
-        </p>
-        <p class="mt-3 text-white/80">
-          Highlights: standardized <strong>15+ SOPs</strong>, cut administrative time by <strong>25%</strong>, reduced onboarding time by <strong>25%</strong>, and improved productivity by <strong>20%</strong>.
-          I’ve led onboarding/training for <strong>40+ professionals</strong> across ATS, LinkedIn, CRM, and U.S. hiring practices.
-        </p>
 
+        <!-- Storytelling content (your text) -->
+        <div class="mt-4 text-white/80 hero-sub space-y-4">
+          <p>
+            Every career journey tells a story, and mine has always revolved around people, performance, and purpose. I began with a deep interest in organizational systems and over the years, transformed that interest into expertise—building HR strategies that not only drive efficiency but also create environments where people thrive.
+          </p>
+          <p>
+            Today, I serve as HR & Payroll Manager at <a class="underline decoration-indigo-400/50 hover:decoration-indigo-400" target="_blank" rel="noopener" href="https://skilledforce.co/">SkilledForce</a>, where I balance compliance with innovation. From designing KPI-driven frameworks that improve accountability, to launching workflow automation tools that cut administrative time by 25%, I focus on connecting people strategy with business outcomes. My journey has also taken me into training, career branding, and international research, giving me a unique lens to understand workforce dynamics both locally and globally.
+          </p>
+          <p>
+            What drives me is the belief that HR is more than policies and payroll—it’s about unlocking human potential. Whether I’m leading onboarding for 40+ professionals, building a CRM training program that reduces onboarding time, or crafting career branding strategies for international clients, I aim to create lasting impact. Let’s connect to explore how we can collaborate for growth, innovation, and human-centered success.
+          </p>
+        </div>
+
+        <!-- Info cards -->
         <div class="mt-6 grid sm:grid-cols-3 gap-4">
-          <div class="card p-4 reveal"><div class="text-sm text-white/60">Based</div><div class="font-semibold">Islamabad, Pakistan</div></div>
-          <div class="card p-4 reveal"><div class="text-sm text-white/60">Email</div><a href="mailto:waleedsidhu91@gmail.com" class="font-semibold underline">waleedsidhu91@gmail.com</a></div>
-          <div class="card p-4 reveal"><div class="text-sm text-white/60">Resume</div><a href="assets/resume.pdf" class="font-semibold underline" download>Download PDF</a></div>
+          <div class="card p-4 reveal">
+            <div class="text-sm text-white/60">Location</div>
+            <div class="font-semibold">Islamabad, Pakistan</div>
+          </div>
+          <div class="card p-4 reveal">
+            <div class="text-sm text-white/60">Email</div>
+            <a href="mailto:waleedsidhu91@gmail.com" class="font-semibold underline">waleedsidhu91@gmail.com</a>
+          </div>
+          <div class="card p-4 reveal">
+            <div class="text-sm text-white/60">Resume</div>
+            <a href="assets/resume.pdf" class="font-semibold underline" download>Download PDF</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Memberships -->
+    <!-- Memberships & Organizations -->
     <section class="max-w-6xl mx-auto px-4 py-12">
       <h2 class="text-2xl md:text-3xl font-bold mb-4">Memberships & Organizations</h2>
       <div class="grid sm:grid-cols-2 gap-6">
@@ -76,21 +100,10 @@
       </div>
     </section>
 
-    <!-- Causes -->
-    <section class="max-w-6xl mx-auto px-4 pb-16">
-      <h2 class="text-2xl md:text-3xl font-bold mb-4">Causes I Care About</h2>
-      <div class="flex flex-wrap gap-2 reveal">
-        <span class="chip">Politics</span>
-        <span class="chip">Human Rights</span>
-        <span class="chip">Social Services</span>
-        <span class="chip">Civil Rights & Social Action</span>
-        <span class="chip">Arts & Culture</span>
-        <span class="chip">Environment</span>
-        <span class="chip">Education</span>
-      </div>
-    </section>
+    <!-- (Removed "Causes I Care About" per your request) -->
   </main>
 
+  <!-- Footer (persist) -->
   <footer class="border-t border-white/10" data-swup-persist="footer">
     <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-white/70 flex flex-col md:flex-row items-center justify-between gap-3">
       <span>© <span id="y"></span> Muhammad Waleed Akhtar — HR & Workforce Management</span>
@@ -101,6 +114,7 @@
       </div>
     </div>
   </footer>
+
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
 </html>
