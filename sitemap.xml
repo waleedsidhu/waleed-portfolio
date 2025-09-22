@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://waleedakhtar.github.io/waleed%20akhtar/</loc></url>
-  <url><loc>https://waleedakhtar.github.io/waleed%20akhtar/about.html</loc></url>
-  <url><loc>https://waleedakhtar.github.io/waleed%20akhtar/experience.html</loc></url>
-  <url><loc>https://waleedakhtar.github.io/waleed%20akhtar/skills.html</loc></url>
-  <url><loc>https://waleedakhtar.github.io/waleed%20akhtar/achievements.html</loc></url>
-  <url><loc>https://waleedakhtar.github.io/waleed%20akhtar/contact.html</loc></url>
+  
+  <url>
+    <loc>https://waleedakhtar.github.io/waleed%20akhtar/</loc>
+    <title>Muhammad Waleed Akhtar | HR & Workforce Management</title>
+  </url>
+  
+  <url>
+    <loc>https://waleedakhtar.github.io/waleed%20akhtar/about.html</loc>
+    <title>About | Muhammad Waleed Akhtar</title>
+  </url>
+  
+  <url>
+    <loc>https://waleedakhtar.github.io/waleed%20akhtar/experience.html</loc>
+    <title>Experience | Muhammad Waleed Akhtar</title>
+  </url>
+  
+  <url>
+    <loc>https://waleedakhtar.github.io/waleed%20akhtar/skills.html</loc>
+    <title>Skills | Muhammad Waleed Akhtar</title>
+  </url>
+  
+  <url>
+    <loc>https://waleedakhtar.github.io/waleed%20akhtar/achievements.html</loc>
+    <title>Achievements | Muhammad Waleed Akhtar</title>
+  </url>
+  
+  <url>
+    <loc>https://waleedakhtar.github.io/waleed%20akhtar/contact.html</loc>
+    <title>Contact | Muhammad Waleed Akhtar</title>
+  </url>
+  
 </urlset>

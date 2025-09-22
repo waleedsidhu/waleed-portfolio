@@ -1,6 +1,5 @@
 /* ============================================================
    app.js — animations, transitions, lightbox, perf tweaks
-   (no LinkedIn logic — that stays on contact.html only)
    ============================================================ */
 (() => {
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -27,17 +26,23 @@
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
     const img   = qs('.hero-img');
-    const name  = qs('.hero-name'); // added
+    const name  = qs('.hero-name'); // now <h1> on home
     const title = qs('.hero-title');
-    const sub   = qs('.hero-sub');
+    const sub   = qs('.hero-sub');  // now <h3> on home
     const ctas  = qsa('.hero-ctas > *');
 
     if (img)   tl.from(img,   { y: 24, opacity: 0, duration: 0.7 });
-    if (name)  tl.from(name,  { y: 22, opacity: 0, duration: 0.6 },  '-=0.45'); // added
+    if (name)  tl.from(name,  { y: 22, opacity: 0, duration: 0.6 },  '-=0.45');
     if (title) tl.from(title, { y: 28, opacity: 0, duration: 0.65 }, '-=0.45');
     if (sub)   tl.from(sub,   { y: 18, opacity: 0, duration: 0.55 }, '-=0.35');
-    if (ctas.length)
-      tl.from(ctas, { y: 14, opacity: 0, duration: 0.45, stagger: 0.07 }, '-=0.25');
+    if (ctas.length) {
+      tl.fromTo(
+        ctas,
+        { y: 14, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.45, stagger: 0.07, clearProps: 'transform' },
+        '-=0.25'
+      );
+    }
   }
 
   /* ---------- Scroll reveals & counters ---------- */
@@ -64,7 +69,6 @@
         });
       });
     } else {
-      // Fallback: IntersectionObserver for reveal
       const io = new IntersectionObserver((e) => {
         e.forEach(({ isIntersecting, target }) => {
           if (isIntersecting) {
@@ -131,7 +135,6 @@
   function initHoverEffects() {
     if (prefersReduced) return;
 
-    // Card hover lift is mostly CSS; here we add a micro parallax tilt for hero + gallery images
     const targets = [
       ...qsa('.hero-img'),
       ...qsa('.gallery-item img')
@@ -147,12 +150,11 @@
           const b = bounds();
           const px = (e.clientX - b.left) / b.width - 0.5;
           const py = (e.clientY - b.top) / b.height - 0.5;
-          const rx = py * -6;         // rotateX
-          const ry = px * 6;          // rotateY
+          const rx = py * -6;
+          const ry = px * 6;
           el.style.transform = `perspective(700px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-2px) scale(1.02)`;
         });
       }
-
       function onLeave() {
         cancelAnimationFrame(raf);
         el.style.transform = '';
@@ -162,9 +164,6 @@
       el.addEventListener('pointerleave', onLeave);
     });
   }
-
-  /* ---------- Active nav ---------- */
-  /* (called in boot + after swup replace) */
 
   /* ---------- Swup transitions ---------- */
   const overlayEnter = () => {
@@ -191,11 +190,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     boot();
 
-    // ✅ Render LinkedIn badge on first load
-    if (typeof window.LIRenderAll === 'function') {
-      try { window.LIRenderAll(); } catch (e) {}
-    }
-
     // Swup page transitions
     const swup = new Swup({
       containers: ['#swup'],
@@ -210,11 +204,6 @@
     swup.hooks.on('content:replace', () => {
       if (window.ScrollTrigger) window.ScrollTrigger.getAll().forEach(t => t.kill());
       boot();
-
-      // ✅ Re-render LinkedIn badge after Swup transition
-      if (typeof window.LIRenderAll === 'function') {
-        try { window.LIRenderAll(); } catch (e) {}
-      }
     });
   });
 })();
